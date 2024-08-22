@@ -1,0 +1,98 @@
+/* App.css */
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container para a aplicação */
+div {
+  box-sizing: border-box;
+}
+
+/* Regras responsivas */
+@media screen and (max-width: 1200px) {
+
+  /* Ajustes para telas entre 1200px e 992px */
+  #features,
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  /* Ajustes para telas entre 992px e 768px */
+  #features,
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #features img,
+  #about img,
+  #services img,
+  #testimonials img,
+  #team img,
+  #contact img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Ajustes para telas menores que 768px */
+  #features,
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #features img,
+  #about img,
+  #services img,
+  #testimonials img,
+  #team img,
+  #contact img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  /* Ajustes para telas menores que 576px */
+  #features,
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact {
+    padding: 15px;
+  }
+
+  .team-member img {
+    width: 80%;
+    height: auto;
+  }
+}
