@@ -1,0 +1,30 @@
+/* Testimonials.scss */
+#testimonials {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+
+  .container {
+    padding: 20px; /* Adiciona um padding interno ao container */
+    border-radius: 10px; /* Arredonda os cantos */
+    background-color: #000; /* Fundo preto para destacar o conteúdo */
+  }
+
+  .section-title h2 {
+    color: #fff; /* Título branco */
+  }
+
+  .testimonial {
+    border: 1px solid purple; /* Borda clara para o destaque do comentário */
+    padding: 15px; /* Espaçamento interno para cada comentário */
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    margin-bottom: 6rem; /* Aumenta o espaçamento inferior */
+  }
+
+  .testimonial-content p {
+    color: #fff; /* Texto branco dentro do comentário */
+  }
+
+  .testimonial-meta {
+    color: #fff; /* Nome do autor branco */
+  }
+}
