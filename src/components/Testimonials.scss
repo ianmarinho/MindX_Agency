@@ -1,0 +1,50 @@
+/* Testimonials.scss */
+#testimonials {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+
+  .container {
+    padding: 20px; /* Adiciona um padding interno ao container */
+    border-radius: 10px; /* Arredonda os cantos */
+    background-color: #000; /* Fundo preto para destacar o conteúdo */
+  }
+
+  .section-title h2 {
+    color: #fff; /* Título branco */
+  }
+
+  .testimonial {
+
+    padding: 15px; /* Espaçamento interno para cada comentário */
+    border: solid 0.5px;
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    margin-bottom: 6rem; /* Aumenta o espaçamento inferior */
+  }
+
+  .testimonial-content p {
+    color: #fff; /* Texto branco dentro do comentário */
+  }
+
+  .testimonial-meta {
+    color: #fff; /* Nome do autor branco */
+  }
+}
+
+/* Testimonials.scss */
+.testimonial-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Faz com que a altura seja igual à largura, criando um quadrado */
+  overflow: hidden; /* Garante que o conteúdo do vídeo não ultrapasse o contêiner */
+}
+
+.testimonial-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o vídeo preencha o contêiner sem distorcer a proporção */
+}
+
+

@@ -1,0 +1,121 @@
+.navbar {
+    background-color: #000;
+    /* Fundo preto */
+}
+
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    /* Alinha a logo e o botão de toggle verticalmente */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Alinha a logo verticalmente */
+    margin-right: 20px;
+    /* Espaçamento entre a logo e os links */
+}
+
+.navbar-brand img {
+    height: 50px;
+    /* Ajuste a altura da logo conforme necessário */
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    /* Alinha os links de navegação verticalmente */
+    justify-content: flex-end;
+    /* Alinha os links à direita no menu responsivo */
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    /* Alinha os links horizontalmente no modo desktop */
+    align-items: center;
+    /* Alinha os links de navegação verticalmente */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+.navbar-nav>li {
+    margin-left: 15px;
+    /* Ajuste o espaçamento entre os itens de navegação */
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    /* Cor do texto dos links */
+    position: relative;
+    /* Necessário para posicionar o pseudo-elemento corretamente */
+    padding-bottom: 4px;
+    /* Espaço para o efeito */
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave para a cor */
+}
+
+.navbar-nav>li>a::after {
+    content: '';
+    /* Adiciona conteúdo vazio para a borda inferior */
+    position: absolute;
+    /* Posiciona a borda inferior relativa ao link */
+    left: 0;
+    bottom: 0;
+    width: 0;
+    /* Inicialmente a largura da borda é 0 */
+    height: 2px;
+    /* Altura da borda inferior */
+    background-color: #5E17EB;
+    /* Cor roxa da borda inferior */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave para a largura */
+}
+
+.navbar-nav>li>a:hover::after {
+    width: 100%;
+    /* Mostra a borda quando o mouse está sobre o link */
+}
+
+/* Estilos para o menu hamburguer em telas menores */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        display: none;
+        /* Oculta o menu na visualização padrão do menu hamburguer */
+    }
+
+    .navbar-toggle {
+        display: block;
+        /* Mostra o botão do menu hamburguer */
+    }
+
+    .navbar-collapse.collapse.in {
+        display: flex;
+        /* Mostra o menu quando o botão do menu hamburguer é clicado */
+        flex-direction: column;
+        /* Alinha os itens de navegação verticalmente */
+        width: 100%;
+        /* Garante que o menu ocupe toda a largura */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        /* Alinha os links verticalmente no menu hamburguer */
+        width: 100%;
+        /* Garante que os links ocupem toda a largura */
+    }
+
+    .navbar-nav>li {
+        margin-left: 0;
+        /* Remove a margem esquerda nos itens de navegação */
+        margin-bottom: 15px;
+        /* Adiciona espaçamento entre os itens de navegação */
+    }
+
+    .navbar-nav>li>a {
+        padding: 10px 15px;
+        /* Adiciona espaçamento interno aos links no menu hamburguer */
+    }
+}

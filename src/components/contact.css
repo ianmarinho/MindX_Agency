@@ -1,0 +1,58 @@
+.contact-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilização para os inputs de nome e email */
+.contact-container .form-group #name,
+.contact-container .form-group #email {
+    color: black;
+
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    padding: 20px; /* Aumenta o padding interno */
+    border-radius: 8px; /* Aumenta a borda arredondada */
+    width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Estilização para a textarea de mensagem */
+.contact-container .form-group #message {
+    color: black;
+    font-size: 18px; /* Tamanho da fonte para a textarea */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    width: 100%; /* Garante que a textarea ocupe toda a largura disponível */
+    height: 200px; /* Aumenta a altura da textarea */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.contact-container .form-control::placeholder {
+    color: #888;
+}
+
+.contact-container .btn-custom {
+    background-color: #555;
+    color: white;
+    border: none;
+}
+
+.contact-container .btn-custom:hover {
+    background-color: #5E17EB;
+}
+
+.contact-info a {
+    color: white;
+}
+
+.contact-info a:hover {
+    color: white;
+}
+
+#footer {
+    color: white;
+    padding: 10px;
+}
+
+
+

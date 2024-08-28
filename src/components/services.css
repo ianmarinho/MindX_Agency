@@ -1,0 +1,89 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+#services {
+  background-color: black;
+
+  padding: 60px 0;
+
+  .section-title {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .service-item {
+    text-align: center;
+    border: 1px solid #5E17EB;
+    /* Adicione uma borda opcional para destaque */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    /* Adicione uma margem inferior para separar os itens */
+
+    .fa {
+      color: #5E17EB;
+      /* Ajuste a cor conforme necessário */
+    }
+
+    .fas{
+      color: #5E17EB;
+    }
+
+    .service-desc {
+      margin-top: 20px;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      p {
+        font-size: 16px;
+        color: white;
+      }
+
+      .service-description {
+        font-size: 14px;
+        color: white;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      /* Garanta que a linha utilize flexbox */
+      flex-wrap: wrap;
+      /* Permita a quebra de linha */
+    }
+
+    .col-md-4 {
+      flex: 0 0 33.3333%;
+      /* Ajuste o tamanho das colunas para 1/3 da largura */
+      max-width: 33.3333%;
+      /* Ajuste o tamanho máximo das colunas */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      /* Ajuste o tamanho das colunas para 100% em telas pequenas */
+      max-width: 100%;
+      /* Ajuste o tamanho máximo das colunas */
+      margin-bottom: 20px;
+      /* Adicione uma margem inferior para separar os itens */
+    }
+  }
+}
